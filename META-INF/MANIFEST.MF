@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.opensixen.as.core
+Bundle-SymbolicName: org.opensixen.as.core;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Export-Package: org.adempiere.server.rpl,
+ org.adempiere.server.rpl.imp,
+ org.compiere.ldap,
+ org.compiere.server,
+ org.compiere.session,
+ org.compiere.web
+Require-Bundle: org.opensixen.base;bundle-version="1.0.0",
+ org.opensixen.jasperReportsTools;bundle-version="1.0.0",
+ org.opensixen.libs;bundle-version="1.0.0"
