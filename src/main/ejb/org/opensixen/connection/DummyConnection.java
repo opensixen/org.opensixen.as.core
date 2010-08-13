@@ -3,6 +3,7 @@ package org.opensixen.connection;
 
 import org.compiere.db.CConnection;
 import org.compiere.interfaces.Server;
+import org.compiere.session.ServerBean;
 import org.opensixen.osgi.Service;
 import org.opensixen.osgi.interfaces.IApplicationServer;
 
@@ -10,7 +11,7 @@ public class DummyConnection extends CConnection{
 
 	private static final long serialVersionUID = 1L;
 	
-	private IApplicationServer m_server;
+	private ServerBean m_server;
 	
 	public DummyConnection() {
 		super(null);
@@ -33,14 +34,9 @@ public class DummyConnection extends CConnection{
 		if (m_server != null)	{
 			return m_server;
 		}
-		
-		// Lookup OSGi server
-		IApplicationServer OSGi = Service.locate(IApplicationServer.class);
-		if (OSGi != null)	{
-			m_server = OSGi;
-			return m_server;
-		}
-		return super.getServer();
+
+		m_server = new ServerBean();
+		return m_server;
 	}
 	
 	
