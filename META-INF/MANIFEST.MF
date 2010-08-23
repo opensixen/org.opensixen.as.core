@@ -10,5 +10,4 @@ Export-Package: org.adempiere.server.rpl,
  org.compiere.session,
  org.compiere.web
 Require-Bundle: org.opensixen.base;bundle-version="1.0.0",
- org.opensixen.jasperReportsTools;bundle-version="1.0.0",
  org.opensixen.libs;bundle-version="1.0.0"
