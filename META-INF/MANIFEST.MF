@@ -11,3 +11,4 @@ Export-Package: org.adempiere.server.rpl,
  org.compiere.web
 Require-Bundle: org.opensixen.base;bundle-version="1.0.0",
  org.opensixen.libs;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
