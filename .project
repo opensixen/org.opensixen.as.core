@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>serverRoot</name>
+	<name>org.opensixen.as.core</name>
 	<comment></comment>
 	<projects>
 		<project>base</project>
